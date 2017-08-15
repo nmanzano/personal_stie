@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- clipboardjs -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- bootbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- javascript -->
+  <script src="script.js" charset="utf-8"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  <title>Noni Manzano</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Noni Manzano</h1>
+  </header>
+
+  <div class="newDiv">
+    <div id="profilePic">
+      <a href="https://linkedin.com/in/noni-manzano"><img id="headShot" src="assets/noni.jpg" alt=""></a>
+    </div>
+  </div>
+  <div id="intro">
+    <p>Software engineer with 10 years of experience in IT. I have a strong passion and curiosity for technology. I've enjoyed engaging in the rapid growth and widespread acceptance of technology within our culture. I'm most satisfied when I can creatively
+      use my technical skills to reach my goals.</p>
+  </div>
+
+  <div id="projects">
+    <h2>Projects</h2>
+    <div class="container">
+      <div class="row">
+        <div class="pic_meow col-xs-12 col-sm-4"> <a href="#"><img id="pic_meow" src="assets/remember_meow.jpg" alt=""></a></div>
+        <div class="pic_mid col-xs-12 col-sm-4"> <a href="https://github.com/ht44/midpoint/blob/master/readme.md"><img id="pic_mid" src="assets/midpoint.jpg" alt=""></a></div>
+        <div class="col-xs-12 col-sm-4"> <a href="https://github.com/adriandeveloper/tutti-chat"><img id="pic_tutti" src="assets/tutti.png" alt=""></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills">
+    <h2>Skills</h2>
+    <br>
+    <div class="container skilsContainer">
+      <ul class="skillDes col-xs-12 col-sm-4 col-md-4 text-center">
+        <li>Agile</li>
+        <li>AJAX</li>
+        <li>Angular</li>
+        <li>Bootstrap</li>
+        <li>CSS</li>
+        <li>Express.js</li>
+      </ul>
+
+      <ul class="skillDes col-xs-12 col-sm-4 col-md-4 text-center">
+        <li>Firebase</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+      </ul>
+
+      <ul class="skillDes col-xs-12 col-sm-4 col-md-4 text-center">
+        <li>Knex.js</li>
+        <li>Node</li>
+        <li>PostgreSQL</li>
+        <li>Rest APIs</li>
+        <li>React Native</li>
+        <li>Reduct</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactIcons col-xs-6 col-sm-3">
+          <a href="https://linkedin.com/in/noni-manzano" target="_blank">
+           <i class="fa fa-linkedin-square btn" style="font-size:48px;color:white"></i>
+         </a>
+          <div class="caption center-block">LinkedIn</div>
+        </div>
+
+        <div class="contactIcons col-xs-6 col-sm-3">
+          <a href="https://github.com/nmanzano" target="_blank">
+           <i class="fa fa-github btn" style="font-size:48px;color:white"></i>
+         </a>
+          <div class="caption center-block">GitHub</div>
+        </div>
+
+        <div class="contactIcons col-xs-6 col-sm-3">
+          <div id="copyButton" data-clipboard-text="contact@noni.tech" >
+          <i class="glyphicon glyphicon-envelope btn" style="font-size:34px;color:white"></i>
+        </div>
+          <div class="caption center-block">contact@noni.tech</div>
+        </div>
+
+        <div class="contactIcons col-xs-6 col-sm-3">
+          <a href="tel:+1-929-367-6664">
+         <i class="glyphicon glyphicon-earphone btn" style="font-size:34px;color:white"></i>
+       </a>
+          <div class="caption center-block">(929)-367-NONI</div>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    var btns = document.querySelectorAll('#copyButton');
+    var clipboard = new Clipboard(btns);
+
+    clipboard.on('success', function(e) {
+      bootbox.alert({
+    message: "Email copied to clipboard",
+    size: 'small'
+});
+    });
+
+    </script>
+
+</body>
+
+
+</html>
